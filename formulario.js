@@ -9,12 +9,12 @@ $("#id_tipo_formulario").on('change', function(){
   })
       jQuery('#send').click(function() {
       var user = jQuery(this).parents().find('input#field4').val();
-      var title = "VocÃª foi denunciado!"; // Assunto
+      var title = "Você foi denunciado!"; // Assunto
       var message = [
-        '[size=24]Mensagem automÃ¡tica[/size]',
+        '[size=24]Mensagem automática[/size]',
         '',
-        'OlÃ¡, esta mensagem Ã© [b]automÃ¡tica[/b], por favor, nÃ£o responda.',
-        'VocÃª foi denunciado por mim atravÃ©s da [url=http://aaaaappp.forumeiros.com/h1-]Central de DenÃºncias[/url] do servidor, por gentileza, procure a denÃºncia no fÃ³rum e verifique-a.'
+        'Olá, esta mensagem é [b]automática[/b], por favor, não responda.',
+        'Você foi denunciado por mim através da [url=http://aaaaappp.forumeiros.com/h1-]Central de Denúncias[/url] do servidor, por gentileza, procure a denúncia no fórum e verifique-a.'
       ].join('\r\n');
       jQuery.post('/privmsg', {
         folder: 'inbox',
